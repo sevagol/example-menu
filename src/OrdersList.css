@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+.orders-container {
+    position: absolute; /* Абсолютное позиционирование */
+    top: 0; /* Позиционирование в верхнем краю */
+    left: 0; /* Позиционирование в левом краю */
+    right: 0; /* Обеспечивает ширину контейнера на всю ширину экрана */
+    background-color: #fff; 
+    border-radius: 0;
+    box-shadow: none;
+    width: 100%;
+    margin: 0;
+    color: black;
+}
+
+
+.orders-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000000;
+    text-align: center;
+    font-family: Poppins;
+}
+
+.orders-container ul {
+    list-style-type: none;
+    padding: 0;
+    color: black;
+    font-family: Poppins;
+}
+
+.orders-container li {
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+
+.orders-container li:last-child {
+    border-bottom: none;
+}
+
+.order-options {
+    margin-left: 10px;
+    margin-right: 7px;
+    padding: 5px 10px;
+    background-color: #d88013;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.svg-button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+.svg-button img {
+    width: 35px;  
+    height: 35px;
+}
+.toggle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+   
+
+}
+
+

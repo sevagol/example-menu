@@ -1,0 +1,70 @@
+:root {
+  --spacing-unit: 16px;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-unit);
+}
+
+.card {
+  width: calc(33.333% - var(--spacing-unit));
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: calc(50% - var(--spacing-unit));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: calc(100% - var(--spacing-unit));
+  }
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+/* Новые стили для кнопок плюса и минуса */
+.icon-button {
+  padding: 4px; /* Уменьшите внутренние отступы */
+  font-size: 12px; /* Уменьшите размер шрифта, если используется текст */
+}
+
+/* Можно также добавить медиа-запросы для дополнительной настройки */
+@media screen and (max-width: 480px) {
+  .icon-button {
+    padding: 2px;
+    font-size: 10px;
+  }
+}
+
+.card {
+  transform: scale(0.9); /* Уменьшение на 10% */
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    transform: scale(0.8); /* Уменьшение на 20% для экранов меньше 768px */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    transform: scale(0.7); /* Уменьшение на 30% для экранов меньше 480px */
+  }
+}
+
+
